@@ -374,6 +374,27 @@ body, html {
     text-decoration:none;
 }
 
+#postCenter {
+    background:#36aadd;
+    width:100%;
+    min-height:300px;
+    overflow:auto;
+    margin-top:20px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+}
+
+#postCenter h1 {
+    width:100%;
+    font-family: blackoutTwo, Arial, sans-serif;
+    color:#606;
+    font-size:40px;
+    margin-top:-10px;
+    float:left;
+}
+
+
 #postContent {
     font-family: ralewayThin, Arial, sans-serif;
     color:#000;
