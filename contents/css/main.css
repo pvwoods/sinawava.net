@@ -345,6 +345,11 @@ body, html {
     float:right;
 }
 
+#postRight a {
+    color:#fcf;
+    text-decoration:none;
+}
+
 #postLeft {
     background:#fcf;
     width:100%;
@@ -362,6 +367,11 @@ body, html {
     font-size:40px;
     margin-top:-10px;
     float:left;
+}
+
+#postLeft a {
+    color:#222;
+    text-decoration:none;
 }
 
 #postContent {

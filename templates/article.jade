@@ -12,6 +12,8 @@ block header
     | written by:
     mixin author(page.metadata.author)
 
-block content
-  article.post
-    section.content!= page.html
+block content  
+  div#postRight
+    h1
+      a(href=page.url)= page.title
+        div#postContent!=page.html
