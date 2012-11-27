@@ -390,6 +390,14 @@ body, html {
     float:left;
 }
 
+#archive {
+    padding: 10px;
+    width:100%;
+    font-family: blackoutTwo, Arial, sans-serif;
+    color:#ff0;
+    font-size:20px;
+}
+
 @media screen and (max-width: 1300px) {
     #postLeft {
         margin-left:0;
@@ -425,4 +433,5 @@ body, html {
         border-radius:0;
     }
 }
+
 
