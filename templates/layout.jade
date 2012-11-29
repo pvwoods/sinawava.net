@@ -13,8 +13,9 @@ html(lang='en')
       link(rel='stylesheet', href='/css/github.css')
       link(rel='stylesheet', href='/css/main.css')
   body
-    div#mainContent
-    div#contentHolder
+    div#centerContent
+      div#mainContent
         div#title
-            a(href=locals.url)= locals.name
+          a(href=locals.url)= locals.name
         block content
+    block footer

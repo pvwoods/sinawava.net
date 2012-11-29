@@ -6,7 +6,7 @@ block content
   - var articles = _.chain(contents.articles._.directories).map(function(item) {
   -   // map articles to index pages of subdirectories of 'articles'
   -   return item.index
-  - }).compact().sortBy(function(item) { // compact removes any directories w/o an index
+  - }).compact().sortBy(function(item) {
   -   // sort them by date
   -   return -item.date
   - }).first(5).value() // and finally take the first 5
@@ -29,4 +29,7 @@ block content
           if article.hasMore
             p.read-more
               a(href=article.url) read more
-  a(href='archive.html')#archive Visit the archives!
+
+block footer
+  div#archive
+    a(href='archive.html') Visit the archives!

@@ -287,9 +287,8 @@ body, html {
 }
 
 #mainContent {
-    width:50%;
+    width:1024px;
     height:100%;
-    min-width:750px;
     background-color: #fe2023;
     background: url(images/mainContentBG.jpg');
     background-repeat: repeat-x;
@@ -298,20 +297,8 @@ body, html {
     background: -moz-linear-gradient(top, #530055, #fe2023);
     background: -ms-linear-gradient(top, #530055, #fe2023);
     background: -o-linear-gradient(top, #530055, #fe2023);
-    position: fixed;
-    top: 0;
-    left: 25%;
-}
-
-#contentHolder {
-    height:100%;
-    width:50%;
-    min-width:750px;
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    top: 0;
 }
 
 #title {
@@ -382,7 +369,7 @@ body, html {
     margin-top:20px;
     margin-left:auto;
     margin-right:auto;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 #postCenter h1 {
@@ -412,29 +399,21 @@ body, html {
 }
 
 #archive {
-    padding: 10px;
-    width:100%;
+    width:1024px;
+    text-align:center;
     font-family: blackoutTwo, Arial, sans-serif;
-    color:#ff0;
-    font-size:20px;
+    font-size:30px;
+    background-color: #ba0000;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:0px 0px 10px 10px;
 }
 
-@media screen and (max-width: 1300px) {
-    #postLeft {
-        margin-left:0;
-    }
-    #postRight {
-        margin-left:0;
-    }
+#archive a {
+    color:#f56;
 }
 
-@media screen and (max-width: 1100px) {
-    #mainContent {
-        left:10%;
-    }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     
     #mainContent {
         min-width:0;
@@ -452,6 +431,10 @@ body, html {
     #postLeft {
         margin-left:0;
         border-radius:0;
+    }
+    #archive {
+        min-width:0;
+        width: 100%;
     }
 }
 
