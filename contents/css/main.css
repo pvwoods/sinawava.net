@@ -62,7 +62,7 @@ body, html {
     text-decoration:none;
 }
 
-#postRight {
+.postRight {
     background:#112;
     width:100%;
     min-height:300px;
@@ -72,11 +72,11 @@ body, html {
     border-radius: 10px 0px 0px 10px;
 }
 
-#postRight p {
+.postRight p {
     padding:15px;
 }
 
-#postRight h1 {
+.postRight h1 {
     width:100%;
     font-family: blackoutTwo, Arial, sans-serif;
     color:#fff;
@@ -85,12 +85,12 @@ body, html {
     float:right;
 }
 
-#postRight a {
+.postRight a {
     color:#fcf;
     text-decoration:none;
 }
 
-#postLeft {
+.postLeft {
     background:#fcf;
     width:100%;
     min-height:300px;
@@ -100,11 +100,11 @@ body, html {
     border-radius: 0px 10px 10px 0px;
 }
 
-#postLeft p {
+.postLeft p {
     padding:15px;
 }
 
-#postLeft h1 {
+.postLeft h1 {
     width:100%;
     font-family: blackoutTwo, Arial, sans-serif;
     color:#000;
@@ -113,13 +113,13 @@ body, html {
     float:left;
 }
 
-#postLeft a {
+.postLeft a {
     color:#a03;
     text-decoration:none;
 }
 
 
-#postRight #postContent {
+.postRight .postContent {
     color:#fff;
     float:left;
 }
@@ -219,11 +219,11 @@ pre code {
         width: 100%;
         left:0;
     }
-    #postRight {
+    .postRight {
         margin-left:0;
         border-radius:0;
     }
-    #postLeft {
+    .postLeft {
         margin-left:0;
         border-radius:0;
     }

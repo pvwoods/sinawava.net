@@ -13,22 +13,14 @@ block content
   - var counter = 0;
   each article in articles
     - counter++
-    if counter % 2 == 1
-      div#postRight
-        h1
-          a(href=article.url)= article.title
-        div#postContent!= article.intro
-          if article.hasMore
-            p.read-more
-              a(href=article.url) read more
-    else
-      div#postLeft
-        h1
-          a(href=article.url)= article.title
-        div#postContent!= article.intro
-          if article.hasMore
-            p.read-more
-              a(href=article.url) read more
+    - postClass = (counter % 2 == 0)? "postLeft" : "postRight"
+    div(class=postClass)
+      h1
+        a(href=article.url)= article.title
+      div.postContent!= article.intro
+        if article.hasMore
+          p.read-more
+            a(href=article.url) read more
 
 block footer
   div#archive

@@ -2,7 +2,7 @@
 extends layout
 
 block content
-  #postLeft
+  .postLeft
     != page.html
     - var archive = _.chain(contents.articles._.directories).map(function(item) {
     -   return item.index
