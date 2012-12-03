@@ -1,4 +1,4 @@
 sinawava.net
 ============
 
-sinawava.net
+my personal blog.
